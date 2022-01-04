@@ -5,7 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopClock"
         mc:Ignorable="d"
-        Title="Clock" Height="450" Width="800" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}">
+        Title="Clock" 
+        FontWeight="Bold" 
+        Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" 
+        Foreground="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}" 
+        Closing="Window_Closing" SourceInitialized="Window_SourceInitialized">
 	<Grid>
 		<Viewbox>
 			<TextBlock x:Name="textBlock" TextWrapping="Wrap" TextAlignment="Center" LineStackingStrategy="MaxHeight" Margin="10,10,10,10">
